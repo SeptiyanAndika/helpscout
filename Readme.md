@@ -1,11 +1,11 @@
 
 # helpscout
 
-  A Helpscout API for node.
+  A Helpscout API for node. Modified from https://github.com/segmentio/helpscout
 
 ## Installation
 
-    $ npm install helpscout
+    $ npm install git://github.com/SeptiyanAndika/helpscout.git
 
 ## Example
 
@@ -68,6 +68,9 @@ Returns a [list of conversations](http://developer.helpscout.net/help-desk-api/c
     tag: null
 }
 ```
+
+#### new Customer(apiKey, email)
+
 
 ## License
 
