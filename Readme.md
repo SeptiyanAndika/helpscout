@@ -41,7 +41,27 @@ helpscout.customers.get(Id,function (err, customer) {
 });
 ```
 
-Or select a mailbox:
+
+create customer:
+
+```
+helpscout.customers.create(data,function (err, customer) {
+  // ..
+});
+```
+
+
+update customer:
+
+```
+helpscout.customers.update(Id,data,function (err, customer) {
+  // ..
+});
+```
+
+
+
+Select a mailbox:
 
 ```js
 var mailbox = require('helpscout')('apikey', 6314);
@@ -86,7 +106,28 @@ Returns a [list of customers](http://developer.helpscout.net/help-desk-api/custo
 
 #### #customers.get(Id callback)
 
-Returns a [detail of customers](http://developer.helpscout.net/help-desk-api/customers/get/)
+Returns a [detail of customer](http://developer.helpscout.net/help-desk-api/customers/get/)
+
+
+#### #customers.create(data,reload callback)
+
+Function for [Create a customer](http://developer.helpscout.net/help-desk-api/customers/create/), with reload defaulted to:
+
+```js
+    reload: false
+```
+
+
+#### #customers.update(data,reload callback)
+
+Function for  [Update a customer](http://developer.helpscout.net/help-desk-api/customers/update/), with reload defaulted to:
+
+```js
+    reload: false
+```
+
+
+
 
 
 #### new Helpscout(apiKey, mailboxId)
